@@ -1,0 +1,7 @@
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+scrape_configs:
+  - job_name: nodejs-app
+    static_configs:
+      - targets:
+          - "nodejs-app:5000"
